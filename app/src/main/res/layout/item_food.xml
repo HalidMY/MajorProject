@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="16dp"
+    app:cardBackgroundColor="#6DBC61">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgFood"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            tools:src="@tools:sample/backgrounds/scenic" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginStart="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:text="Title" />
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="Salad salad saladasd" />
+
+            <TextView
+                android:id="@+id/tvCalories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:layout_marginTop="8dp"
+                android:text="29 Calories" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                app:tint="@color/white"
+                android:rotation="90"
+                app:srcCompat="@drawable/ic_baseline_arrow_circle_up_24"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
